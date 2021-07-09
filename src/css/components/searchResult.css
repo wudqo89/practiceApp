@@ -1,0 +1,72 @@
+.SearchResult {
+  margin-top: 10px;
+}
+.SearchResult .container {
+  display: none;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.SearchResult img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img.fadeIn {
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+}
+
+.SearchResult .container .card {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  height: 292.5px;
+  cursor: zoom-in;
+}
+.SearchResult .container .card-title {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: var(--min-font);
+  opacity: 0;
+  color: white;
+  text-shadow: 2px 2px 4px #97979771;
+  transition: all 0.2s;
+}
+
+.SearchResult .container .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.2) inset,
+    0px -10px 35px 0px rgba(0, 0, 0, 0.2) inset;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.SearchResult .container .card:hover .card-title,
+.SearchResult .container .card:hover .card-overlay {
+  opacity: 1;
+}
+
+.SearchResult .container.show {
+  display: grid;
+}
+
+.SearchResult .no-searchResult {
+  text-align: center;
+  font-size: inherit;
+  margin-top: 8em;
+  margin-bottom: 1em;
+}
+.SearchResult .no-searchImage {
+  display: flex;
+  justify-content: center;
+  /* em은 부모에게 상속받은 font-size값에 자기 요소 font-size를 곱한 값 */
+  font-size: 4em;
+}

@@ -1,0 +1,63 @@
+/* darkmode - button 이동 */
+@media only screen and (max-width: 1400px) {
+  .darkmode-switch {
+    top: auto;
+    left: auto;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* https://www.mydevice.io/ */
+@media only screen and (min-width: 1367px) {
+  .content-wrapper {
+    width: 30vw;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .content-wrapper {
+    width: 37vw;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  .content-wrapper {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .SearchResult .container {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 800px) {
+  .content-wrapper {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .SearchResult .container {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+@media only screen and (max-width: 576px) {
+  .SearchResult .container {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+  .content-wrapper {
+    width: 100vw;
+  }
+  .random-btn {
+    right: 2px;
+  }
+}
+
+/* dark mode 처리 */
+@media (prefers-color-scheme: dark) {
+  html.darkmode:root {
+    --color-mode: 'dark';
+  }
+  html:root:not(.darkmode) {
+    --background: var(--color-dark);
+    --text-color: var(--color-light);
+  }
+}

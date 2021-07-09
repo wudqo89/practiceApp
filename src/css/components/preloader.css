@@ -1,0 +1,36 @@
+.preloader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  /* display: flex; */
+  /* visibility: hidden;
+  opacity: 0; */
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.preloader-img {
+  width: 70px;
+  height: 70px;
+  background-image: url('../../images/cat.svg');
+  animation: grow 1.5s linear infinite;
+}
+.preloader-text {
+  font-family: 'Baloo 2', cursive;
+  font-size: 40px;
+  color: palevioletred;
+  animation: grow-reverse 1.5s linear infinite;
+}
+.preloader.show {
+  display: flex;
+  /* opacity: 1;
+  visibility: visible; */
+}
+.preloader.hidden {
+  animation: fadeOut 0.5s;
+  animation-fill-mode: forwards;
+}

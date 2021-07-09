@@ -1,0 +1,49 @@
+.ContentModal {
+  /* 코드리팩토링하자 */
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+.ContentModal .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.ContentModal .content-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  background: var(--background);
+  color: var(--text-color);
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.ContentModal .content-header {
+  position: relative;
+}
+.ContentModal .content-title {
+  font-size: 1rem;
+}
+.ContentModal .content-title,
+.ContentModal .content-info {
+  padding: 10px;
+}
+.ContentModal .content-title > * {
+  margin: 0;
+}
+.ContentModal .close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+}

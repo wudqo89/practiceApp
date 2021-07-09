@@ -1,0 +1,67 @@
+/* @font-face {
+  font-family: 'Goyang';
+  src: url('fonts/Goyang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300|Baloo+2&display=swap');
+
+/* fluid-fonts 
+  https://css-tricks.com/snippets/css/fluid-typography/
+*/
+:root {
+  --min-width: 320px;
+  --max-width: 1920px;
+  --min-width-num: 320;
+  --max-width-num: 1920;
+  --min-font: 16px;
+  --min-font-num: 16;
+  --max-font-num: 40;
+  --color-mode: 'light';
+  --color-dark: #333;
+  --color-light: #fff;
+  --background: #fff;
+  --text-color: #333;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: 'Sunflower', sans-serif;
+}
+body {
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(
+    var(--min-font) + (var(--max-font-num) - var(--min-font-num)) *
+      (
+        (100vw - var(--min-width)) /
+          (var(--max-width-num) - var(--min-width-num))
+      )
+  );
+  background: var(--background);
+  color: var(--text-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+#App {
+  position: relative;
+  margin: 0.5em auto;
+  max-width: 1200px;
+  column-gap: 1.5em;
+  /* 검색 값이 없을 때 body 클릭시 검색popup 사라지게 */
+  height: 95vh;
+}
