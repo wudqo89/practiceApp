@@ -2,7 +2,7 @@
   "name": "frontend-class",
   "private": true,
   "version": "1.0.0",
-  "description": "using Cat API, vanillaJS, without frameworks",
+  "description": "make SPA using Cat API, vanillaJS, without frameworks",
   "main": "index.html",
   "scripts": {
     "deploy": "gh-pages -d dist",
@@ -18,12 +18,12 @@
     "test",
     "gif"
   ],
-  "author": "jyoungcode",
+  "author": "youngcodej",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/learn-programmers/fe-assignment-lab/issues"
   },
-  "homepage": "https://wudqo89.github.io/practiceapp",
+  "homepage": "https://wudqo89.github.io/practiceApp/",
   "dependencies": {
     "gh-pages": "^3.2.3"
   },

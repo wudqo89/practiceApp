@@ -11,7 +11,7 @@
 /* https://www.mydevice.io/ */
 @media only screen and (min-width: 1367px) {
   .content-wrapper {
-    width: 30vw;
+    width: 30vw;`
   }
 }
 @media only screen and (max-width: 1366px) {
