@@ -1,6 +1,6 @@
 # 고양이 검색 앱
 
-[Search for a cat-APP](https://wudqo89.github.io/practiceApp/)
+😺 [Search for a cat-APP](https://wudqo89.github.io/practiceApp/)
 
 VanillaJS로 라이브러리, 프레임워크 없이 SPA를 만든다.
 
