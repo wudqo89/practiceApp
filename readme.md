@@ -1,12 +1,13 @@
 # 고양이 검색 앱
 
+[Search for a cat-APP](https://wudqo89.github.io/practiceApp/)
+
 VanillaJS로 라이브러리, 프레임워크 없이 SPA를 만든다.
 
 ## 수행 기술
 
 - JavaScript(ES6)
 - 설치되어있는 모듈(node_modules) 외에 다른 외부 라이브러리는 사용하지 않도록 한다. 예를들어 jQuery, Webpack, Lodash, Axios, Angular, React, Vue, Immutable-js, Ramda 등을 사용할 수 없다.
-
 
 ## 기능
 
@@ -36,6 +37,3 @@ VanillaJS로 라이브러리, 프레임워크 없이 SPA를 만든다.
 1. HTTP 500 코드에 따른 처리 부족.
 2. React버전으로 코드 변경
 3. 테스트코드 작성
-
-
-
